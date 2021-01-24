@@ -25,17 +25,18 @@ namespace AWSASSIGN01
                     Console.Write("Enter a location name: ");
                     name = Console.ReadLine();
 
-                    if (name !="")
+                    if (name != "")
                     {
                         locations.Add(name);
+
+                        foreach (var item in locations)
+                        {
+                            Console.WriteLine(item);
+                        }
                     }
 
                 } while (name != "");
 
-                foreach (var item in locations)
-                {
-                    Console.WriteLine(item);
-                }
 
                 // Add locations to location table in db
                 var db = new Context();
@@ -48,35 +49,29 @@ namespace AWSASSIGN01
 
                 Random _random = new Random();
 
-                for (int d = 1; d < 2; d++)
+                // Console.WriteLine("Debug:  Line 52 ran");
+                for (int d = 1; d < 181; d++)
                 {
                     int numberOfEvents = _random.Next(0, 7);
-
+                    // Console.WriteLine("Debug:  Line 56 ran");
                     for (int e = 0; e < numberOfEvents; e++)
                     {
                         int hours = _random.Next(0, 24);
                         int minutes = _random.Next(0, 60);
                         int seconds = _random.Next(0, 60);
                         int locationIndex = _random.Next(5, 8);
-                        // string stringDate = DateTime.UtcNow.Date.AddDays(d * -1).AddHours(hours).AddMinutes(minutes).AddSeconds(seconds).ToString("yyyy-MM-dd HH:mm:ss");
-                        // Console.WriteLine(stringDate + " " + locations[locationIndex]);
+                        string stringDate = DateTime.UtcNow.Date.AddDays(d * -1).AddHours(hours).AddMinutes(minutes).AddSeconds(seconds).ToString("yyyy-MM-dd HH:mm:ss");
 
-                        IQueryable<Location> queryLocation = db.Locations.AsQueryable().FirstOrDefault(loc => loc.LocationId == locationIndex);
-
-                        Console.WriteLine(locationIndex + "-" + queryLocation.Name);
-
-                        // IEnumerable<Location> QuerySyntax = from loc in db.Locations
-                        //                                         where loc.LocationId == locationIndex
-                        //                                         select loc;
+                        // Console.WriteLine("Debug:  Line 70 ran");
+                        var results = db.Locations.Where(l => l.LocationId == locationIndex).FirstOrDefault();
+                        Console.WriteLine(stringDate + "-" + results.Name);
 
                         // foreach (var location in QuerySyntax)
                         // {
                         //     Console.WriteLine(location.Name);
                         // }
 
-
                         //db.AddEvent(new Event() {TimeStamp = DateTime.UtcNow.Date.AddDays(d * -1).AddHours(hours).AddMinutes(minutes).AddSeconds(seconds), Location = queryLocation});
-
 
                     }
                 }

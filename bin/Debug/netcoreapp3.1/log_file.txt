@@ -31,3 +31,19 @@
 2021-01-21 16:19:52.5291|INFO|AWSASSIGN01.Program|Program ended
 2021-01-21 16:20:55.7774|INFO|AWSASSIGN01.Program|Program started
 2021-01-21 16:20:58.5485|INFO|AWSASSIGN01.Program|Program ended
+2021-01-24 07:08:34.3636|INFO|AWSASSIGN01.Program|Program started
+2021-01-24 07:08:38.6039|ERROR|AWSASSIGN01.Program|Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+2021-01-24 07:08:38.6039|INFO|AWSASSIGN01.Program|Program ended
+2021-01-24 07:12:13.2944|INFO|AWSASSIGN01.Program|Program started
+2021-01-24 07:12:14.1131|ERROR|AWSASSIGN01.Program|Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+2021-01-24 07:12:14.1131|INFO|AWSASSIGN01.Program|Program ended
+2021-01-24 07:14:28.4858|INFO|AWSASSIGN01.Program|Program started
+2021-01-24 07:14:30.3895|ERROR|AWSASSIGN01.Program|Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+2021-01-24 07:14:30.3895|INFO|AWSASSIGN01.Program|Program ended
+2021-01-24 07:15:26.8095|INFO|AWSASSIGN01.Program|Program started
+2021-01-24 07:15:28.1399|ERROR|AWSASSIGN01.Program|Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+2021-01-24 07:15:28.1399|INFO|AWSASSIGN01.Program|Program ended
+2021-01-24 07:17:35.3021|INFO|AWSASSIGN01.Program|Program started
+2021-01-24 07:18:44.7299|INFO|AWSASSIGN01.Program|Program ended
+2021-01-24 07:20:35.4218|INFO|AWSASSIGN01.Program|Program started
+2021-01-24 07:21:39.7355|INFO|AWSASSIGN01.Program|Program ended
