@@ -64,14 +64,15 @@ namespace AWSASSIGN01
 
                         // Console.WriteLine("Debug:  Line 70 ran");
                         var results = db.Locations.Where(l => l.LocationId == locationIndex).FirstOrDefault();
-                        Console.WriteLine(stringDate + "-" + results.Name);
+                        string locationName = results.Name.ToString();
+                        Console.WriteLine(stringDate + "-" + locationName);
 
                         // foreach (var location in QuerySyntax)
                         // {
                         //     Console.WriteLine(location.Name);
                         // }
 
-                        //db.AddEvent(new Event() {TimeStamp = DateTime.UtcNow.Date.AddDays(d * -1).AddHours(hours).AddMinutes(minutes).AddSeconds(seconds), Location = queryLocation});
+                        db.AddEvent(new Event() {TimeStamp = DateTime.UtcNow.Date.AddDays(d * -1).AddHours(hours).AddMinutes(minutes).AddSeconds(seconds), Location = new Location() {Name = locationName}});
 
                     }
                 }
