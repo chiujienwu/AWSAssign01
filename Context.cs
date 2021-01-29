@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using System.Collections.Generic;
 
 namespace AWSASSIGN01
 {
@@ -14,9 +15,21 @@ namespace AWSASSIGN01
             this.SaveChanges();
         }
 
+        public void AddEventList(List<Event> events)
+        {
+            this.Events.AddRange(events);
+            this.SaveChanges();
+        }
+
         public void AddLocation(Location loc)
         {
             this.Locations.Add(loc);
+            this.SaveChanges();
+        }
+
+        public void AddLocationList(List<Location> locations)
+        {
+            this.Locations.AddRange(locations);
             this.SaveChanges();
         }
 

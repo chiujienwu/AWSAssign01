@@ -49,3 +49,11 @@
 2021-01-24 07:21:39.7355|INFO|AWSASSIGN01.Program|Program ended
 2021-01-25 17:12:54.0719|INFO|AWSASSIGN01.Program|Program started
 2021-01-25 17:14:05.4304|INFO|AWSASSIGN01.Program|Program ended
+2021-01-28 19:12:57.7348|INFO|AWSASSIGN01.Program|Program started
+2021-01-28 19:13:12.6966|ERROR|AWSASSIGN01.Program|Object reference not set to an instance of an object.
+2021-01-28 19:13:12.6966|INFO|AWSASSIGN01.Program|Program ended
+2021-01-29 10:26:08.1380|INFO|AWSASSIGN01.Program|Program started
+2021-01-29 10:26:11.4398|INFO|AWSASSIGN01.Program|Database already contains 3 locations
+2021-01-29 10:26:12.3811|INFO|AWSASSIGN01.Program|470 events saved to db
+2021-01-29 10:26:12.3919|INFO|AWSASSIGN01.Program|Program ended
+2021-01-29 10:26:12.3919|INFO|AWSASSIGN01.Program|Program ended
